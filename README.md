@@ -55,5 +55,5 @@ The following areas are covered:
 - [Postman Collection](xxx)
 
 ---
-## Project Status: **In Progress**
+##### _Project Status: **In Progress**_
 ---
