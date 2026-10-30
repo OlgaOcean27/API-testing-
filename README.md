@@ -32,47 +32,19 @@ The project includes positive and negative testing scenarios, response validatio
 
 The following areas are covered:
 
-- Retrieving the list of categories
-- Retrieving a category by ID
-- Retrieving category hierarchy and subcategories
-- Validating response structure and data types
-- Validating category identifiers and required fields
-- Checking parent-child category relationships
-- Handling invalid and non-existent identifiers
-- Validating API response status codes and error handling
-
-## Tools & Technologies
-
-{| Tool / Technology | Purpose |
-|---|---|
-| Postman | Sending API requests and validating responses |
-| JavaScript | Writing automated test assertions |
-| REST API | API testing |
-| JSON | Request and response data format |
-| Swagger | API documentation and endpoint analysis |
-| GitHub | Test documentation and project version control |}
-
-## Project Structure
-
-{```text
-api-testing-categories/
-│
-├── README.md
-│
-├── test-cases/
-│   └── categories-test-cases.md
-│
-├── bug-reports/
-│   └── categories-bug-reports.md
-│
-├── postman/
-│   ├── categories.postman_collection.json
-│   └── environment.json
-│
-└── evidence/
-    ├── api-responses/
-    └── test-results/}
-```
+- Retrieving all users
+- Creating a new user
+- Retrieving a specific user
+- Updating a specific user
+- Partially updating a specific user
+- Deleting a specific user
+- Retrieving users matching a search query
+- Customer login
+- Retrieving current customer information
+- Logging out and invalidating the authentication token
+- Refreshing the authentication token
+- Requesting a password reset
+- Changing a password
 
 ## Test Documentation
 
