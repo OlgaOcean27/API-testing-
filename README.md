@@ -46,7 +46,7 @@ The following areas are covered:
 - Refreshing the authentication token
 - Requesting a password reset
 - Changing a password
-- 
+ 
 ---
 ### Test Documentation:
 ---
