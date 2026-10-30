@@ -15,8 +15,8 @@
 - OS: macOS 14.6
 - Swagger: `https://api.practicesoftwaretesting.com/api/documentation?utm_source=chatgpt.com#/User`
 ---
-### Severity: **Major** (provisional)
-### Priority: **High** (provisional)
+#### Severity: **Major** (provisional)
+#### Priority: **High** (provisional)
 ---
 #### _Preconditions:_
 ---
