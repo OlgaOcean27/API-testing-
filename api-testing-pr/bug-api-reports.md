@@ -3,8 +3,8 @@
 #### _Description:_
 ---
 ##### – The `PATCH /users/{userId}` endpoint returns `200 OK` and a success response when a request containing a new password is submitted. However, the password does not appear to be updated.
-– ##### The email address is updated successfully, but the user can still log in using the previous password. Authentication with the new password returns `401 Unauthorized`.
-– ##### This behavior may indicate an inconsistency between the documented request schema and the actual endpoint behavior.
+##### – The email address is updated successfully, but the user can still log in using the previous password. Authentication with the new password returns `401 Unauthorized`.
+##### – This behavior may indicate an inconsistency between the documented request schema and the actual endpoint behavior.
 ---
 #### _Environment:_
 ---
