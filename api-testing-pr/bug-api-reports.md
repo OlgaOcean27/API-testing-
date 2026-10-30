@@ -1,4 +1,4 @@
-## **API BR-004**: [PATCH] Password is not updated although the request returns 200 OK
+## **API BR-004**: [PATCH] Password is not updated although the request returns `200 OK`
 ---
 #### _Description:_
 ---
