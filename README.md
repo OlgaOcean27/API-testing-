@@ -4,15 +4,16 @@
 ---
 
 ### Project Summary:
-
+---
 #### ➤ _This project focuses on API testing of the **Categories** section of the [Practice Software Testing](https://practicesoftwaretesting.com/) demo e-commerce application._
 
 #### ➤ _The purpose of this project is to verify the functionality, reliability, and data integrity of category-related API endpoints using Postman._
 
 #### ➤ _The project includes positive and negative testing scenarios, response validation, and automated API checks._
 
-### Project Information
 
+### Project Information:
+---
 | Parameter | Description |
 |---|---|
 | Application | Practice Software Testing |
@@ -27,8 +28,8 @@
 | Documentation | Markdown |
 | Version Control | Git / GitHub |
 
-### Testing Scope
-
+### Testing Scope:
+---
 The following areas are covered:
 
 - Retrieving all users
@@ -45,13 +46,12 @@ The following areas are covered:
 - Requesting a password reset
 - Changing a password
 
-### Test Documentation
-
+### Test Documentation:
+---
 - [API Test Cases](xxx)
 - [API Bug Reports](xxx)
 - [Postman Collection](xxx)
 
 ## Project Status: **In Progress**
-
 
 ---
