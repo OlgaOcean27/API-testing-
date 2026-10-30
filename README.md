@@ -2,7 +2,6 @@
 ##### **QA Portfolio Project | Junior QA Engineer**
 
 ---
-
 ### Project Summary:
 ---
 #### ➤ _This project focuses on API testing of the **Categories** section of the [Practice Software Testing](https://practicesoftwaretesting.com/) demo e-commerce application._
@@ -11,7 +10,7 @@
 
 #### ➤ _The project includes positive and negative testing scenarios, response validation, and automated API checks._
 
-
+---
 ### Project Information:
 ---
 | Parameter | Description |
@@ -28,8 +27,10 @@
 | Documentation | Markdown |
 | Version Control | Git / GitHub |
 
+---
 ### Testing Scope:
 ---
+
 The following areas are covered:
 
 - Retrieving all users
@@ -45,13 +46,14 @@ The following areas are covered:
 - Refreshing the authentication token
 - Requesting a password reset
 - Changing a password
-
+- 
+---
 ### Test Documentation:
 ---
 - [API Test Cases](xxx)
 - [API Bug Reports](xxx)
 - [Postman Collection](xxx)
 
+---
 ## Project Status: **In Progress**
-
 ---
