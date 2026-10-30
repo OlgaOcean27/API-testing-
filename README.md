@@ -1,6 +1,5 @@
-### API-testing — Categories | 
-
-####### **QA Portfolio Project | Junior QA Engineer**
+### API-testing — Categories 
+##### **QA Portfolio Project | Junior QA Engineer**
 
 ---
 
