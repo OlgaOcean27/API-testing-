@@ -5,11 +5,11 @@
 
 ### Project Summary:
 
-➤ This project focuses on API testing of the **Categories** section of the [Practice Software Testing](https://practicesoftwaretesting.com/) demo e-commerce application.
+#### ➤ This project focuses on API testing of the **Categories** section of the [Practice Software Testing](https://practicesoftwaretesting.com/) demo e-commerce application.
 
-➤ The purpose of this project is to verify the functionality, reliability, and data integrity of category-related API endpoints using Postman.
+#### ➤ The purpose of this project is to verify the functionality, reliability, and data integrity of category-related API endpoints using Postman.
 
-➤ The project includes positive and negative testing scenarios, response validation, and automated API checks.
+#### ➤ The project includes positive and negative testing scenarios, response validation, and automated API checks.
 
 ### Project Information
 
