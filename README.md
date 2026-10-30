@@ -3,7 +3,7 @@
 
 ---
 
-## Project Summary:
+#### Project Summary:
 
 This project focuses on API testing of the **Categories** section of the [Practice Software Testing](https://practicesoftwaretesting.com/) demo e-commerce application.
 
@@ -11,7 +11,7 @@ The purpose of this project is to verify the functionality, reliability, and dat
 
 The project includes positive and negative testing scenarios, response validation, and automated API checks.
 
-## Project Information
+#### Project Information
 
 | Parameter | Description |
 |---|---|
@@ -27,7 +27,7 @@ The project includes positive and negative testing scenarios, response validatio
 | Documentation | Markdown |
 | Version Control | Git / GitHub |
 
-## Testing Scope
+#### Testing Scope
 
 The following areas are covered:
 
@@ -45,16 +45,13 @@ The following areas are covered:
 - Requesting a password reset
 - Changing a password
 
-## Test Documentation
+### Test Documentation
 
 - [API Test Cases](xxx)
 - [API Bug Reports](xxx)
 - [Postman Collection](xxx)
 
-## Test Execution & Results
-
-
-## Project Status: **In Progress**
+#### Project Status: **In Progress**
 
 
 ---
