@@ -62,9 +62,9 @@ _Each test case includes:_
 
 ### TC-001: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -90,9 +90,9 @@ _Each test case includes:_
 
 ### TC-002: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -117,9 +117,9 @@ _Each test case includes:_
 ---
 ### TC-003: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -144,9 +144,9 @@ _Each test case includes:_
 ---
 ### TC-001: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -171,9 +171,9 @@ _Each test case includes:_
 ---
 ### TC-004: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -225,9 +225,9 @@ _Each test case includes:_
 ---
 ### TC-006: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -252,9 +252,9 @@ _Each test case includes:_
 ---
 ### TC-007: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -279,9 +279,9 @@ _Each test case includes:_
 ---
 ### TC-008: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -306,9 +306,9 @@ _Each test case includes:_
 ---
 ### TC-009: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -333,9 +333,9 @@ _Each test case includes:_
 ---
 ### TC-010: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -360,9 +360,9 @@ _Each test case includes:_
 ---
 ### TC-011: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -387,9 +387,9 @@ _Each test case includes:_
 ---
 ### TC-012: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -414,10 +414,10 @@ _Each test case includes:_
 ---
 ### TC-013: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
-
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
+  
 **Test Data:**
 - xxx
 - xxx
@@ -441,9 +441,9 @@ _Each test case includes:_
 ---
 ### TC-014: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -468,9 +468,9 @@ _Each test case includes:_
 ---
 ### TC-015: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -495,9 +495,9 @@ _Each test case includes:_
 ---
 ### TC-016: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -522,9 +522,9 @@ _Each test case includes:_
 ---
 ### TC-017: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -549,9 +549,9 @@ _Each test case includes:_
 ---
 ### TC-018: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -576,9 +576,9 @@ _Each test case includes:_
 ---
 ### TC-019: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -603,9 +603,9 @@ _Each test case includes:_
 ---
 ### TC-020: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -630,9 +630,9 @@ _Each test case includes:_
 ---
 ### TC-021: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -657,9 +657,9 @@ _Each test case includes:_
 ---
 ### TC-022: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -684,9 +684,9 @@ _Each test case includes:_
 ---
 ### TC-023: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -711,9 +711,9 @@ _Each test case includes:_
 ---
 ### TC-024: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -738,9 +738,9 @@ _Each test case includes:_
 ---
 ### TC-025: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -765,9 +765,9 @@ _Each test case includes:_
 ---
 ### TC-026: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -792,9 +792,9 @@ _Each test case includes:_
 ---
 ### TC-027: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -819,9 +819,9 @@ _Each test case includes:_
 ---
 ### TC-028: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -846,9 +846,9 @@ _Each test case includes:_
 ---
 ### TC-029: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -873,9 +873,9 @@ _Each test case includes:_
 ---
 ### TC-030: xxx
 
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
