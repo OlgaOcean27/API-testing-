@@ -4,11 +4,11 @@
 
 This document contains test cases designed to verify the functionality of the User API of the Practice Software Testing demo application.
 
-### **Application:** Practice Software Testing  
-### **API Type:** REST API  
-### **Base URL:** `https://api.practicesoftwaretesting.com`  
-### **Testing Tool:** Postman  
-### **Documentation:** Swagger
+#### **Application:** Practice Software Testing  
+#### **API Type:** REST API  
+#### **Base URL:** `https://api.practicesoftwaretesting.com`  
+#### **Testing Tool:** Postman  
+#### **Documentation:** Swagger
 
 ### 2. Testing Scope:
 
