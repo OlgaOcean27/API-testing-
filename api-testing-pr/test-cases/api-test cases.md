@@ -21,7 +21,6 @@ _The testing scope includes the following API operations:_
 - Updating User Information
 - Partially Updating User Information
 - Deleting a User
-- Authentication and Authorization
 
 ### 3. Test Design Techniques
 
