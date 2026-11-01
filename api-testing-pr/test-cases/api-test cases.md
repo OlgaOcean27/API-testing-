@@ -56,18 +56,19 @@ _Each test case includes:_
 
 ---
 ---
-## 6. **Test Cases** :
+#  **Test Cases** :
 ---
 ---
 ### TC-001: User Management: Register a new user with valid data.
 ---
 - **Priority:** High 
-- **Type:** High  
-- **Preconditions:**
-- The test user has not been registered in the system.
-- The Postman collection Practice Software Testing — User API is available.
-- The Postman environment is configured with the API base URL: https://api.practicesoftwaretesting.com
-- A unique email address is available for registration.
+- **Type:** High
+
+**Preconditions:**
+ 1. The test user has not been registered in the system.
+ 2. The Postman collection Practice Software Testing — User API is available.
+ 3. The Postman environment is configured with the API base URL: https://api.practicesoftwaretesting.com
+ 4. A unique email address is available for registration.
 
 **Test Data:**
  1. Method: POST
