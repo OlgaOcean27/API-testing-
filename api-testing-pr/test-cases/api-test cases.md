@@ -61,8 +61,8 @@ _Each test case includes:_
 ---
 ### TC-001: User Management: Register a new user with valid data.
 ---
- **Priority:** High 
- **Type:** High
+- **Priority:** _High_ 
+- **Type:** _Positive_
 
 **Preconditions:**
  1. The test user has not been registered in the system.
