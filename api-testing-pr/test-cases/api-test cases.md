@@ -202,9 +202,9 @@ _Each test case includes:_
 ---
 ### TC-006: xxx
 ---
-**Priority:** xxx 
-**Type:** xxx  
-**Preconditions:** xxx
+- **Priority:** xxx 
+- **Type:** xxx  
+- **Preconditions:** xxx
 
 **Test Data:**
 - xxx
@@ -593,7 +593,7 @@ _Each test case includes:_
 ---
 ---
 ### TC-020: xxx
-===
+---
 - **Priority:** xxx 
 - **Type:** xxx  
 - **Preconditions:** xxx
