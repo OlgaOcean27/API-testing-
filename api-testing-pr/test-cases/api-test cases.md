@@ -67,7 +67,7 @@ _Each test case includes:_
 **Preconditions:**
  1. The test user has not been registered in the system.
  2. The Postman collection Practice Software Testing — User API is available.
- 3. The Postman environment is configured with the API base URL: https://api.practicesoftwaretesting.com
+ 3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
  4. A unique email address is available for registration.
 
 **Test Data:**
@@ -76,7 +76,7 @@ _Each test case includes:_
  3. Authorization: No Auth
  4. Request Body: Valid user data in JSON format, according to the Swagger schema.
  5. Email: A unique email address that has not been registered previously.
- 6. Swagger(User): https://api.practicesoftwaretesting.com/api/documentation?utm_source=chatgpt.com#/User/storeUser 
+ 6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`
 
 **Steps:**
  1. Open the Postman collection.
