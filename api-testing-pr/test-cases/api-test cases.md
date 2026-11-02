@@ -609,7 +609,7 @@ _Each test case includes:_
 3. Verify that the request URL is `{{baseURL}}/users/register`.
 4. Set Authorization to `No Auth`.
 5. Open the request `Body` tab and select `raw` and `JSON`. 
-6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to an Arabic name (""أحمد"").
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to an Arabic name ("أحمد").
 7. Verify that the `Content-Type` header is set to `application/json`
 8. Send the request
 9. Review the response status code and response body.
@@ -653,7 +653,7 @@ _Each test case includes:_
 3. Verify that the request URL is `{{baseURL}}/users/register`.
 4. Set Authorization to `No Auth`.
 5. Open the request `Body` tab and select `raw` and `JSON`. 
-6. 6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to a Chinese name (""张伟"").
+6. 6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to a Chinese name ("张伟").
 7. Verify that the `Content-Type` header is set to `application/json`
 8. Send the request
 9. Review the response status code and response body.
@@ -741,7 +741,7 @@ _Each test case includes:_
 3. Verify that the request URL is `{{baseURL}}/users/register`.
 4. Set Authorization to `No Auth`.
 5. Open the request `Body` tab and select `raw` and `JSON`. 
-6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to Cyrillic name ""Анна"".
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to Cyrillic name "Анна".
 7. Verify that the `Content-Type` header is set to `application/json`
 8. Send the request
 9. Review the response status code and response body.
@@ -892,171 +892,265 @@ _Each test case includes:_
 
 ---
 ---
-### TC-020: xxx
+### TC-020: User Management: Register a new user with a 19-character `last_name`
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`  
+7. `last_name`: A string containing exactly 19 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `last_name` field to a string containing exactly 19 characters.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API accepts the registration request because the `last_name` field contains exactly 19 characters, which is within the allowed limit.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request with a `last_name` value containing exactly 19 characters.
+2. The API returned `200` status. 
+3. The response confirmed that the new user has been successfully registered.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-021: xxx
+### TC-021: User Management: Register a new user with a 1 character `last_name`
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+4. A unique email address is available for registration.
+  
+**Test Data:**
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`  
+7. `last_name`: A string containing exactly 1 characters.
+
+**Steps:**
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `last_name` field to a string containing exactly 1 character.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
+
+**Expected Result:**
+1. The API accepts the registration request because the `last_name` field contains exactly 1 character, which is within the allowed limit.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
+
+**Actual Result:** 
+1. The API accepted the registration request with a `last_name` value containing exactly 1 character.
+2. The API returned `200` status. 
+3. The response confirmed that the new user has been successfully registered.
+
+**Status:** PASS
+
+---
+---
+### TC-022: User Management: Register a new user with a `last_name` containing spaces
+---
+- **Priority:** High 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com` 
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`  
+7. The `last_name` field contains two or more name parts separated by a space. The total length does not exceed 20 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `last_name` field to a string containing two or more valid values ​​separated by spaces.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API accepts the registration request because the `last_name` field contains a last name with two or more parts separated by a space, and the total length does not exceed 20 characters.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:**
+1. The API accepted the registration request because the `last_name` field contains a last name with two or more parts separated by a space, and the total length does not exceed 20 characters.
+2. The API returned `200` status. 
+3. The response confirmed that the new user has been successfully registered.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-022: xxx
+### TC-023: User Management: Register a new user with a hyphenated `last_name`
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com` 
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser` 
+7. The `last_name` field contains two or more name parts separated by a hyphen. The total length does not exceed 20 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `last_name` field to a hyphenated name consisting of two name parts.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API accepts the registration request because the `last_name` field contains a hyphenated last name, and the total length does not exceed 20 characters.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request because the `last_name` field contains a hyphenated last name, and the total length does not exceed 20 characters.
+2. The API returned `200` status. 
+3. The response confirmed that the new user has been successfully registered.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-023: xxx
+### TC-024: User Management: Register a new user with a URL as the `last_name` value
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Negative  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com` 
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`  
+7. The `last_name` field contains a URL [example `https://tinyurl.com` ]. The total length does not exceed 20 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `last_name` field to a URL value.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API rejects the registration request because the `last_name` field contains a `URL` instead of a person's last name.
+2. The response contains an appropriate validation error.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request with a URL in the `last_name` field.
+2. The API returned HTTP `201` Created.
+3. The response confirmed that the new user was successfully registered.
 
-**Status:** xxx
+**Status:** _Fail_ (potential validation issue based on a UX assumption; requirements not confirmed)
 
 ---
 ---
-### TC-024: xxx
+### TC-025: User Management: Register a new user with special characters in the `last_name` field
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Negative  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`  
+7. The `last_name` field contains special characters [example: `]\@±&~#`  ]. The total length does not exceed 20 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `last_name` field to special symbols.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API rejects the registration request because the `last_name` field contains `special symbols` instead of a person's last name.
+2. The response contains an appropriate validation error.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request with special symbols in the `last_name` field.
+2. The API returned HTTP `201` Created.
+3. The response confirmed that the new user was successfully registered.
 
-**Status:** xxx
-
----
----
-### TC-025: xxx
----
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
-
-**Test Data:**
-- xxx
-- xxx
-- xxx
-
-**Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
-
-**Expected Result:**
-- xxx
-- xxx
-- xxx
-
-**Actual Result:** xxx
-
-**Status:** xxx
+**Status:** _Fail_ (potential validation issue based on a UX assumption; requirements not confirmed)
 
 ---
 ---
