@@ -584,199 +584,311 @@ _Each test case includes:_
 
 ---
 ---
-### TC-013: xxx
+### TC-013: User Management: Register a new user with Arabic characters in the `first_name` field
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** Medium 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`  
+7. The `first_name` field contains only Arabic characters (e.g., "أحمد"). The total length does not exceed 40 characters. 
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to an Arabic name (""أحمد"").
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API accepts the registration request because the `first_name` field contains Arabic characters, and the total length does not exceed 40 characters.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request because the `first_name` field contains Arabic characters, and the total length does not exceed 40 characters.
+2. The response confirmed that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code 201.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-014: xxx
+### TC-014: User Management: Register a new user with Chinese characters in the `first_name` field
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** Medium 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com` 
+4. A unique email address is available for registration.
   
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`    
+7. The `first_name` field contains only Chinese characters (e.g., "张伟"). The total length does not exceed 40 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. 6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to a Chinese name (""张伟"").
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API accepts the registration request because the `first_name` field contains Chinese characters, and the total length does not exceed 40 characters.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request because the `first_name` field contains Chinese characters, and the total length does not exceed 40 characters.
+2. The response confirmed that the new user has been successfully registered.
+3. The API returned the expected successful HTTP status code 201.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-015: xxx
+### TC-015: User Management: Register a new user with Hindi characters in the first_name field
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** Medium 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com` 
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`   
+7. The `first_name` field contains only Hindi characters (example: "आरव"). The total length does not exceed 40 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to Hindi name ""आरव""
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API accepts the registration request because the `first_name` field contains Hindi characters, and the total length does not exceed 40 characters.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request because the `first_name` field contains Hindi characters, and the total length does not exceed 40 characters.
+2. The response confirmed that the new user has been successfully registered.
+3. The API returned the expected successful HTTP status code 201.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-016: xxx
+### TC-016: User Management: Register a new user with Cyrillic characters in the first_name field
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** Medium 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com` 
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`    
+7. The `first_name` field contains only Cyrillic characters (example: "Анна"). The total length does not exceed 40 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name` field to Cyrillic name ""Анна"".
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API accepts the registration request because the `first_name` field contains Cyrillic characters, and the total length does not exceed 40 characters.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request because the `first_name` field contains Cyrillic characters, and the total length does not exceed 40 characters.
+2. The response confirmed that the new user has been successfully registered.
+3. The API returned the expected successful HTTP status code 201.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-017: xxx
+### TC-017: User Management: Register a new user with a whitespace-only `first_name`
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** Medium 
+- **Type:** Negative  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com` 
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in JSON format, according to the Swagger schema.
+5. Email: A unique email address that has not been registered previously.
+6. The `first_name` field contains a single whitespace character (" ").
+7. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the Register New User request.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to No Auth.
+5. Open the request `Body` tab and select raw and `JSON`.
+6. Add a valid `JSON` request body based on the required fields specified in `Swagger`. Set the `first_name` field to a single space ("" "").
+7. Verify that the `Content-Type` header is set to `application/json`.
+8. Send the request.
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API rejects the registration request because the `first_name` field contains only whitespace characters and does not contain a name.
+2. The response contains an appropriate validation error.
+3. The user is not registered.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API rejected the registration request with a whitespace-only `first_name` value.
+2. The API returned HTTP `422` Unprocessable Content.
+3. The response contained a validation error.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-018: xxx
+### TC-018: User Management: Register a new user with a 20-character `last_name`
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Positive  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com` 
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser` 
+7. `last_name`: A string containing exactly 20 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `last_name field` to a string containing exactly 20 characters.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API accepts the registration request because the `last_name` field contains exactly 20 characters, which is within the allowed limit.
+2. The response confirms that the new user has been successfully registered.
+3. The API returns the expected successful HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API accepted the registration request with a `last_name` value containing exactly 20 characters.
+2. The API returned `200` status. 
+3. The response confirmed that the new user has been successfully registered.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-019: xxx
+### TC-019: User Management: Register a new user with a 21-character `last_name`
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Negative  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing – User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser` 
+7. `last_name`: A string containing exactly 21 characters.
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `last_name` field to a string containing exactly 21 characters.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API rejects the registration request because the `last_name` field contains exactly 21 characters, which is within the allowed limit.
+2. The response confirms that the new user has not been successfully registered.
+3. The API returns the expected error HTTP status code.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API rejected the registration request with a `last_name` value containing exactly 21 characters.
+2. The API returned `422` error status. 
+3. The response confirmed that the new user has not been successfully registered.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
