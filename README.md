@@ -51,7 +51,7 @@ The following areas are covered:
 ### Test Documentation:
 ---
 - [API Test Cases](xxx)
-- [API Bug Reports](xxx)
+- [API Bug Reports](https://github.com/OlgaOcean27/API-testing-/blob/f7147b75785c281c941222bea297a52b5c365c6b/api-testing-pr/bug-api-reports.md)
 - [Postman Collection](https://github.com/OlgaOcean27/API-testing-/tree/06b3835ad56d4248de22a4c39470836213c88a22/api-testing-pr/postman)
 
 ---
