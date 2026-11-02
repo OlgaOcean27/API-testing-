@@ -52,7 +52,7 @@ The following areas are covered:
 ---
 - [API Test Cases](xxx)
 - [API Bug Reports](xxx)
-- [Postman Collection](xxx)
+- [Postman Collection](https://github.com/OlgaOcean27/API-testing-/tree/06b3835ad56d4248de22a4c39470836213c88a22/api-testing-pr/postman)
 
 ---
 ##### _Project Status: **In Progress**_
