@@ -222,7 +222,7 @@ _Each test case includes:_
 9. Review the response status code and response body.
 
 **Expected Result:**
-1. The API accepts the registration request because the `first_name` field contains exactly 40 characters, which is within the allowed limit.
+1. The API accepts the registration request, as the `first_name` field contains exactly 40 characters and does not exceed the permitted limit.
 2. The response confirms that the new user has been successfully registered.
 3. The API returns the expected successful HTTP status code.
 
@@ -835,7 +835,7 @@ _Each test case includes:_
 9. Review the response status code and response body.
 
 **Expected Result:**
-1. The API accepts the registration request because the `last_name` field contains exactly 20 characters, which is within the allowed limit.
+1. The API accepts the registration request because the `last_name` field contains exactly 20 charactersand does not exceed the permitted limit.
 2. The response confirms that the new user has been successfully registered.
 3. The API returns the expected successful HTTP status code.
 
