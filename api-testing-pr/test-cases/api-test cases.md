@@ -93,13 +93,13 @@ _Each test case includes:_
  1. The API returns the successful HTTP status code specified in `Swagger`. 
  2. The response confirms that the new user has been successfully registered.
  3. The response body is returned in the expected format.
- 4. The registered user can subsequently be used in other User API test cases, where applicable."
+ 4. The registered user can subsequently be used in other User API test cases, where applicable.
 
 **Actual Result:** 
  1. The API returned HTTP status code `200` OK.
  2. The response confirmed that the new user was successfully registered.
  3. The response body was returned in `JSON` format.
- 4. The user was successfully created and can be used for subsequent API tests."
+ 4. The user was successfully created and can be used for subsequent API tests.
 
 **Status:** PASS
 
@@ -112,7 +112,7 @@ _Each test case includes:_
 - **Preconditions:**
 1. The test user has not been registered in the system.
 2. The Postman collection Practice Software Testing — User API is available.
-3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`.
 4. A unique email address is available for registration."
 
 **Test Data:**
@@ -121,7 +121,7 @@ _Each test case includes:_
 3. Authorization: No Auth
 4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema, with an empty `first_name` value.
 5. Email: A unique email address that has not been registered previously.
-6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser` 
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`.
 
 **Steps:**
 1. Open the Postman collection.
@@ -130,18 +130,18 @@ _Each test case includes:_
 4. Set Authorization to `No Auth`.
 5. Open the request `Body` tab and select `raw` and `JSON`. 
 6. Add a valid `JSON` request body based on the required fields specified in `Swagger`. Set the `first_name` field to an empty string `("")`.
-7. Verify that the `Content-Type` header is set to `application/json`
-8. Send the request
-9. Review the response status code and response body."
+7. Verify that the `Content-Type` header is set to `application/json`.
+8. Send the request.
+9. Review the response status code and response body.
 
 **Expected Result:**
 1. The API rejects the registration request because the `first_name` field is empty.
 2. The response confirms that the new user has not been successfully registered.
-3. The API returns an appropriate validation error."
+3. The API returns an appropriate validation error.
 
 **Actual Result:** 
 1. The API rejected the registration request because the `first_name` field is empty.
-2. The API returned `422` status. [Unprocessable Content]
+2. The API returned `422` status. [Unprocessable Content].
 3. The response confirmed that the new user has not been successfully registered.
 
 **Status:** PASS
@@ -155,7 +155,7 @@ _Each test case includes:_
 - **Preconditions:**
 1. The test user has not been registered in the system.
 2. The Postman collection Practice Software Testing — User API is available.
-3. The Postman environment is configured with the API base `URL: https://api.practicesoftwaretesting.com`
+3. The Postman environment is configured with the API base `URL: https://api.practicesoftwaretesting.com`.
 4. A unique email address is available for registration.
 
 **Test Data:**
@@ -164,7 +164,7 @@ _Each test case includes:_
 3. Authorization: No Auth
 4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema, with an empty `last_name` value.
 5. Email: A unique email address that has not been registered previously.
-6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`.
 
 **Steps:**
 1. Open the Postman collection.
@@ -173,8 +173,8 @@ _Each test case includes:_
 4. Set Authorization to `No Auth`.
 5. Open the request `Body` tab and select `raw` and `JSON`. 
 6. Add a valid `JSON` request body based on the required fields specified in `Swagger`. Set the `last_name` field to an empty string `("")`.
-7. Verify that the `Content-Type` header is set to `application/json`
-8. Send the request
+7. Verify that the `Content-Type` header is set to `application/json`.
+8. Send the request.
 9. Review the response status code and response body.
 
 **Expected Result:**
@@ -184,21 +184,21 @@ _Each test case includes:_
 
 **Actual Result:** 
 1. The API rejected the registration request because the `last_name` field is empty.
-2. The API returned `422` status. [Unprocessable Content]
+2. The API returned `422` status. [Unprocessable Content].
 3. The response confirmed that the new user has not been successfully registered.
 
 **Status:** PASS
 
 ---
 ---
-### TC-004: User Management: Register a new user with a 40-character `first_name`
+### TC-004: User Management: Register a new user with a 40-character `first_name`.
 ---
 - **Priority:** High 
 - **Type:** Positive  
 - **Preconditions:**
 1. The test user has not been registered in the system.
 2. The Postman collection Practice Software Testing – User API is available.
-3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`.
 4. A unique email address is available for registration.
 
 **Test Data:**
@@ -207,7 +207,7 @@ _Each test case includes:_
 3. Authorization: No Auth
 4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema.
 5. Email: A unique email address that has not been registered previously.
-6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser` 
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`. 
 7. `first_name`: A string containing exactly 40 characters.
 
 **Steps:**
@@ -217,8 +217,8 @@ _Each test case includes:_
 4. Set Authorization to `No Auth`.
 5. Open the request `Body` tab and select `raw` and `JSON`. 
 6. Add a valid JSON request body based on the required fields specified in Swagger. Set the `first_name field` to a string containing exactly 40 characters.
-7. Verify that the `Content-Type` header is set to `application/json`
-8. Send the request
+7. Verify that the `Content-Type` header is set to `application/json`.
+8. Send the request.
 9. Review the response status code and response body.
 
 **Expected Result:**
@@ -235,14 +235,14 @@ _Each test case includes:_
 
 ---
 ---
-### TC-005: User Management: Register a new user with a 41-character `first_name`
+### TC-005: User Management: Register a new user with a 41-character `first_name.
 ---
 - **Priority:** High 
 - **Type:** Negative  
 - **Preconditions:**
 1. The test user has not been registered in the system.
 2. The Postman collection Practice Software Testing — User API is available.
-3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`.
 4. A unique email address is available for registration.
 
 **Test Data:**
