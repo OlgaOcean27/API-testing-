@@ -266,7 +266,7 @@ _Each test case includes:_
 9. Review the response status code and response body.
 
 **Expected Result:**
-1. The API rejects the registration request because the `first_name` field contains exactly 41 characters, which is within the allowed limit.
+1. The API rejects the registration request because the `first_name` field exceeds the 40-character limit.
 2. The response confirms that the new user has not been successfully registered.
 3. The API returns the expected error HTTP status code.
 
@@ -879,7 +879,7 @@ _Each test case includes:_
 9. Review the response status code and response body.
 
 **Expected Result:**
-1. The API rejects the registration request because the `last_name` field contains exactly 21 characters, which is within the allowed limit.
+1. The API rejects the registration request because the `first_name` field exceeds the 20-character limit.
 2. The response confirms that the new user has not been successfully registered.
 3. The API returns the expected error HTTP status code.
 
