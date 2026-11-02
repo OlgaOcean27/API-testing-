@@ -105,59 +105,89 @@ _Each test case includes:_
 
 ---
 ---
-### TC-002: xxx
+### TC-002: User Management: Register a new user with an empty `first_name`
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Negative  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing — User API is available.
+3. The Postman environment is configured with the API base URL: `https://api.practicesoftwaretesting.com`
+4. A unique email address is available for registration."
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema, with an empty `first_name` value.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser` 
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3.  Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid `JSON` request body based on the required fields specified in `Swagger`. Set the `first_name` field to an empty string `("")`.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body."
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API rejects the registration request because the `first_name` field is empty.
+2. The response confirms that the new user has not been successfully registered.
+3. The API returns an appropriate validation error."
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API rejected the registration request because the `first_name` field is empty.
+2. The API returned `422` status. [Unprocessable Content]
+3. The response confirmed that the new user has not been successfully registered.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
-### TC-003: xxx
+### TC-003: User Management: Register a new user with an empty `last_name`
 ---
-- **Priority:** xxx 
-- **Type:** xxx  
-- **Preconditions:** xxx
+- **Priority:** High 
+- **Type:** Negative  
+- **Preconditions:**
+1. The test user has not been registered in the system.
+2. The Postman collection Practice Software Testing — User API is available.
+3. The Postman environment is configured with the API base `URL: https://api.practicesoftwaretesting.com`
+4. A unique email address is available for registration.
 
 **Test Data:**
-- xxx
-- xxx
-- xxx
+1. Method: POST
+2. Endpoint: /users/register
+3. Authorization: No Auth
+4. Request Body: Valid user data in `JSON` format, according to the `Swagger` schema, with an empty `last_name` value.
+5. Email: A unique email address that has not been registered previously.
+6. Swagger(User): `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`
 
 **Steps:**
-1. xxx
-2. xxx
-3. xxx
-4. xxx
+1. Open the Postman collection.
+2. Select the `Register New User request`.
+3. Verify that the request URL is `{{baseURL}}/users/register`.
+4. Set Authorization to `No Auth`.
+5. Open the request `Body` tab and select `raw` and `JSON`. 
+6. Add a valid `JSON` request body based on the required fields specified in `Swagger`. Set the `last_name` field to an empty string `("")`.
+7. Verify that the `Content-Type` header is set to `application/json`
+8. Send the request
+9. Review the response status code and response body.
 
 **Expected Result:**
-- xxx
-- xxx
-- xxx
+1. The API rejects the registration request because the `last_name` field is empty.
+2. The response confirms that the new user has not been successfully registered.
+3. The API returns an appropriate validation error.
 
-**Actual Result:** xxx
+**Actual Result:** 
+1. The API rejected the registration request because the `last_name` field is empty.
+2. The API returned `422` status. [Unprocessable Content]
+3. The response confirmed that the new user has not been successfully registered.
 
-**Status:** xxx
+**Status:** PASS
 
 ---
 ---
