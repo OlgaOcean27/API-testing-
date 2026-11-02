@@ -13,7 +13,7 @@
 - **Tool:** Postman
 - **Endpoint:** `PATCH /users/{userId}`
 - OS: macOS 14.6
-- Swagger: `https://api.practicesoftwaretesting.com/api/documentation?utm_source=chatgpt.com#/User`
+- Swagger: `https://api.practicesoftwaretesting.com/api/documentation?#/User/storeUser`
 ---
 #### Severity: **Major** (provisional)
 #### Priority: **High** (provisional)
